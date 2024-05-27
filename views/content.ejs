@@ -1,0 +1,6 @@
+<%-include('partials/header.ejs')%>
+<h1 class="ms-5"><%=content["title"]%></h1>
+<p class="ms-5"><%=content["text-content"]%></p>
+<a href="/edit/<%=content["id"]%>" class="btn btn-warning ms-5">Edit</a>
+<a href="/delete/<%=content.id%>" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-danger ms-5">Delete</a>
+<%-include('partials/footer.ejs')%>

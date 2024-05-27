@@ -1,0 +1,14 @@
+<%- include('partials/header.ejs')%>
+
+<form action="/create" method="POST">
+    <div class="ms-5 me-5 mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Title"required>
+      </div>
+      <div class="ms-5 me-5 mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Write your blog here...👇</label>
+        <textarea class="form-control" name="text-content" id="exampleFormControlTextarea1" placeholder="This is your blog..." rows="8"required></textarea>
+      </div>
+      <button class="btn btn-outline-primary ms-5" type="submit">POST</button>
+</form>
+  <%-include('partials/footer.ejs')%>

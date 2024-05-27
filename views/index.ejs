@@ -1,0 +1,13 @@
+<%-include("partials/header.ejs")%>
+<%if(content.length>0){%>
+    <ul class="ms-5 mt-3 list-unstyled">
+    <%content.map((elem)=>{%>
+        <li><a href="/content/<%=elem.id%>"class="text-decoration-none"><%=elem.title%></a></li>
+    <%  }) %>
+    </ul>
+<%}else{%>
+    <h1 class="text-center">No blogs yet!!!</h1>
+<%}%>
+
+
+<%-include('partials/footer.ejs')%>
